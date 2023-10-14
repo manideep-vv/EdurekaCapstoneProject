@@ -38,7 +38,8 @@ public class NotificationService {
                     HttpMethod.POST,request, List.class);
             System.err.println("Successfully Invoked Notification service using REST template with url "+notificationServiceRegisterUrl);
         }catch (Exception e){
-            System.err.println("Exception occurred while invoking REST API "+notificationServiceRegisterUrl+"\n due to "+e);
+            System.err.println("Unable to send the notification/unable to call notification micro service ");
+            System.err.println("Exception occurred while invoking Notification Service REST API with url "+notificationServiceRegisterUrl+"\n due to "+e);
         }
     }
 }

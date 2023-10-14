@@ -15,6 +15,10 @@ Note:
    some of data is auto inserted on application startup
 5) 
 
+customer service - 8080
+Notification service - 8081
+Hotel Management service - 8082
+
 
 Procedure to start application one by one
 ====================================================

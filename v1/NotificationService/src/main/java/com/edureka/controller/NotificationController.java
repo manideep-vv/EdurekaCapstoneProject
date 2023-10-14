@@ -29,6 +29,10 @@ public class NotificationController {
     public List<Notification> getAllNotifications() {
         return repository.findAll();
     }
+    @GetMapping("/")
+    public String welcome() {
+        return "welcome";
+    }
 
     @GetMapping("/{id}")
     public ResponseEntity<Notification> getNotificationById(@PathVariable Long id) {
